@@ -1,179 +1,341 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>south_kids</title>
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-    <!-- jquer -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남쪽아이</title>
+   
 
-    <!-- custom -->
-    <link href="../assets/css/default.css" type="text/css" media="all" rel="stylesheet" />
-    <script defer src="../assets/js/ui.js"></script>
-  </head>
-  <body>
-    <div id="wrap">
-      <section class="container">
-        <div class="inner" data-motion="tilde">
-          <div class="blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="2" d="M0,32L60,26.7C120,21,240,11,360,5.3C480,0,600,0,720,16C840,32,960,64,1080,90.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-          </div>
-          
+    <!--메타태그-->
+    <link rel="shortcut icon" href="../assets/images/common/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/664033e5f8.js" crossorigin="anonymous"></script>
+    <!--폰트어썸-->
+
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/swiper.css">    
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="../assets/js/jquery-3.6.0.min.js"></script> -->
+    <script src="../assets/js/swiper.js"></script>    
+
+    <!--떠나요 요금연동 스크립트-->
+    <!-- <link rel="StyleSheet" href='//www.ddnayo.com/api/script.css' type="text/css" />
+    <script type="text/javascript" id="ddnayoapi" src="../assets///www.ddnayo.com/api/script.aspx?apiuser=alwaysdesign" charset="utf-8"></script> -->
+    <!--떠나요 요금연동 스크립트-->
+
+    <!--스크롤 매직 cdn-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>    
+    <!--스크롤 매직 cdn-->
+
+    <!--GSAP cdn-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>    
+    <!--GSAP cdn-->
+    
+	
+
+    <script src="../assets/js/frontend.js"></script>    <!--메타태그-->
+</head>
+<body>
+    <!--헤더-->
+    <header class="hd">
+        <div class="header-fixed-wrap">
+            <div class="inner-con">
+                <div class="logo">
+                    <a href="#link"><img src="../assets/images/common/logo.png" alt="남쪽아이"></a>
+                </div>
+                
+                <button class="menu-btn">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>                        
+                </button>
+            </div>
         </div>
-      </section>
-      <section class="container" >
-        <div class="inner" data--motion="fade">
-          <div class="box1" data-aos="fade-down" data-aos-duration="1200"></div>
-          <div class="box2" data-aos="fade-up"  data-aos-duration="1200"></div>
-          <div class="d-flex">
-            <div class="testa" data-aos="fade-down" data-aos-duration="1200"><span>test text fade-down</span></div>
-            <div class="testb" data-aos="fade-up"  data-aos-duration="1200"><span>test text fade-up</span></div>
-          </div>
-        </div>
-      </section>
-      <section class="container">
-        <div class="inner" data--motion=""></div>
-      </section>
+
+         <div class="header-contents-wrap">
+            <div class="logo">
+                <a href="#link"><img src="../assets/images/common/t-logo.png" alt="남쪽아이"></a>
+            </div>
+            <button class="menu-btn">
+                <span class="line line1"></span>
+                <span class="line line2"></span>                        
+            </button>
+            <div class="inner-con">
+                <div class="top-con">
+                    <div class="menu-img-wrap">
+                        <img src="../assets/images/gallery/main/m-gnb.png" alt="">
+                    </div>
+                    <nav class="main-menu-wrap">
+                        <ul class="menu-wrap">
+                            <li class="main-list">
+                                <a href="#link">PROLOGUE</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#link">rooms</a></li>
+                                    <li><a href="#link">special</a></li>
+                                    <li><a href="#link">tour</a></li>
+                                    <li><a href="#link">location</a></li>
+                                    <li><a href="#link">reservation</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="view">
+                            <li><a href="#link">View</a></li>
+                            <li><a href="#link">Play movie</a></li>
+                        </ul>
+                    </nav>
+                </div>                
+                <div class="bottom-con">
+                    <ul class="sns-wrap">
+                        <li>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta-t.png" alt="인스타검색"></a>
+                        </li>
+                        <li>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock-t.png" alt="예약"></a>
+                        </li>
+                        <li>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog-t.png" alt="네이버블로그검색"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+    </header>    <!--헤더-->
+    <main class="main-wrap top-slide-wrap">
+        <section class="con1">
+            <div class="top-overflow">
+                <div class="top-move-box">
+                    <div class="main-slide-wrap">
+                        <figure class="swiper-wrapper">
+                            <div class="swiper-slide vdo-slide">
+                                <div class="top-vdo">
+                                    <iframe class="random1" src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
+                                    <iframe class="random2" src="https://player.vimeo.com/video/746758674?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
+                                    <script src="https://player.vimeo.com/api/player.js"></script>
+                                    <div class="movie-btn">
+                                        <a href="sub1_movie.html">
+                                            <!-- <div class="svg-txt"> -->
+                                            <div class="view-txt">
+                                                <i class="fa-solid fa-play" style="color:#948475"></i> WATCH MOVIE
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/1.png);"></div>
+                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/2.png);"></div>
+                            
+                        </figure>
+                    </div>
+                    <!-- <div class="top-vdo-wrap">
+                        <div class="top-vdo">
+                            <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                            
+                        </div>
+                    </div> -->
+                    <div class="tit-wrap">
+                         <div class="inner-con">
+                             <div class="tit">                
+                                <div>A place where <i>picturesque landscapes</i>  <br>
+                                    and <i>beautiful nature</i> come together <br>
+                                    <p> Immerse yourself in the serenity of the wide open sea, <br>
+                                    the melody of crashing waves, and the magical hues of the sunset.</p></div>                
+                            </div>
+                             <div class="basic-slide-btn">
+                                <button class="prev-btn-wrap">
+                                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
+                                    <span class="slide-line"></span>
+                                </button>
+                                <div class="center-deco">
+                                    <span class="center-cir"></span>
+                                </div>
+                                <button class="next-btn-wrap">
+                                    <a href="../assets/javascript:;" class="next-btn">Next</a>
+                                    <span class="slide-line"></span>
+                                </button>
+                            </div>                         
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="con2">
+            <figure class="room-preview-section">
+                <div class="inner-con">
+                    <div class="tit-visual">
+                        SOUTH KIDS PREMIUM POOL VILLA
+                    </div>
+                    <div class="sero-tit">
+                        <p>South Kids</p>
+                        <p class="s">Premium Pool Villa</p>
+                    </div>
+                    <div class="pic pic1"><img src="../assets/images/gallery/main/m1.png" alt=""></div>
+                    <div class="pic pic2"><img src="../assets/images/gallery/main/m2.png" alt=""></div>
+                    <div class="pic pic3"><img src="../assets/images/gallery/main/m3.png" alt=""></div>
+                    
+                </div>
+            </figure>
+                                                
+        </section>
+        <section class="con3">
+            <div class="inner-cont">
+                <div class="inner-cont1">
+                    <div class="img1"><img src="../assets/images/gallery/main/m3-1.png" alt=""></div>
+                    <div class="img2"><img src="../assets/images/gallery/main/m3-2.png" alt=""></div>
+                    <div class="txt-area">
+                        <p class="tit">Living &amp; Kitchen</p>
+                        <p class="txt">수영장과 놀이공간에서 즐거움을 찾는 아이들의 활기찬 움직임을 한눈에 담아보며, 여수의 아름다운 바다와 해안,  <br>
+                            그리고 멋진 노을이 펼쳐지는 공간에서 엄마와 아빠의 여유로운 시간을 드립니다. </p>
+                        <div class="btn"><a href="#">MORE VIEW</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-cont">
+                <div class="inner-cont2">
+                    <div class="img1"><img src="../assets/images/gallery/main/m3-3.png" alt=""></div>
+                    <div class="img2"><img src="../assets/images/gallery/main/m3-4.png" alt=""></div>
+                    <div class="txt-area">
+                        <p class="tit">Powder room</p>
+                        <p class="txt">미끄럼방지 구조로 구성되어 한층더 안전한 개별 샤워부스와 프라이빗 파우더룸이 있어,<br>
+                            아이들과 함께하는 추억을 안전하고 편안히 즐기실 수 있습니다.</p>
+                        <div class="btn"><a href="#link">MORE VIEW</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-cont">
+                <div class="inner-cont3">
+                    <div class="img1"><img src="../assets/images/gallery/main/m3-5.png" alt=""></div>
+                    <div class="img2"><img src="../assets/images/gallery/main/m3-6.png" alt=""></div>
+                    <div class="txt-area">
+                        <p class="tit">Family Room</p>
+                        <p class="txt">아이들이 있는 한가족 최대 5인까지 편히 잠들 수 있는 공간을 동일한 구성의 방을 제공합니다. <br>
+                            소중한 가족과 함께하는 특별한 여행을 보다 편하게 즐기실 수 있습니다.</p>
+                        <div class="btn"><a href="#link">MORE VIEW</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="con4">
+            <div class="bg-txt">SPECIAL OFFER</div>
+            <div class="inner-cont">
+                <div class="img1"><img src="../assets/images/gallery/main/m4-1.png" alt=""></div>
+                <div class="img2"><img src="../assets/images/gallery/main/m4-2.png" alt=""></div>
+                <div class="img3"><img src="../assets/images/gallery/main/m4-3.png" alt=""></div>
+            </div>
+            <div class="white-bg">
+                <p class="tit">OceanView</p>
+                <P class="txt">푸른 바다를 보며 소원을 빌면 이루어질 거예요. <br>
+                    먼발치 여수와 고흥을 잇는 팔영대교, <br>
+                    에메랄드 빛의 해안과 노을이 아름다운 여수 바다</P> 
+                <div class="btns-area">
+                    이전 다음
+                </div>
+            </div>
+        </section>
+        <section class="con5">
+            <div class="img1"><img src="../assets/images/trash-2.png" alt=""></div>
+            <div class="txt-area">
+                <div class="inner-txt">
+                    <p class="tit">Premium Poolvilla</p>
+                    <p class="txt">SOUTH KIDS</p>
+                    <p class="txt2">‘여수 바다, 해안과 노을이 함께 하는 오션뷰 감성 독채풀빌라’ <br><br>
+                        '남쪽아이'는 엄마, 아빠, 그리고 우리 아이들의 <br>
+                        낭만같은 여유와 휴식이 있는 공간입니다.</p>
+                    <div class="btn-area"><a href="#link">RESERVATION</a></div>
+                </div>
+            </div>
+             <!-- <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                             -->
+        </section>
+        
     </div>
-
-    <!-- <div id="transcroller-body" class="aos-all">
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>1</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>2</h3></div>
-      </div>
-      <div class="aos-item" data-aos="zoom-out-down">
-        <div class="aos-item__inner"><h3>3</h3></div>
-      </div>
-      <div class="aos-item" data-aos="flip-down">
-        <div class="aos-item__inner"><h3>4</h3></div>
-      </div>
-      <div class="aos-item" data-aos="flip-up">
-        <div class="aos-item__inner"><h3>5</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>6</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>7</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>8</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>9</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>10</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>11</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>12</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>13</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>14</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>15</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>16</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-down">
-        <div class="aos-item__inner"><h3>17</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>18</h3></div>
-      </div>
-      <div class="aos-item" data-aos="zoom-out">
-        <div class="aos-item__inner"><h3>19</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-up">
-        <div class="aos-item__inner"><h3>20</h3></div>
-      </div>
-      <div class="aos-item" data-aos="zoom-out">
-        <div class="aos-item__inner"><h3>21</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>22</h3></div>
-      </div>
-      <div class="aos-item" data-aos="zoom-out-up">
-        <div class="aos-item__inner"><h3>23</h3></div>
-      </div>
-      <div class="aos-item" data-aos="zoom-out-down">
-        <div class="aos-item__inner"><h3>24</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>25</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>26</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>27</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>28</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>29</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>30</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>31</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>32</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>33</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>34</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>35</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>36</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>37</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>38</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>39</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>40</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>41</h3></div>
-      </div>
-      <div class="aos-item" data-aos="fade-in">
-        <div class="aos-item__inner"><h3>42</h3></div>
-      </div>
-    </div> -->
-
-    <script src="../assets/js/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-in-out-sine",
-      });
-    </script>
-  </body>
+</figure>     
+     
+            
+        </section>
+    </main>
+    <!--푸터-->
+<footer class="ft"> 
+    <div class="ft-overflow">
+        <div class="inner-con">
+            <div class="left-cont">
+                <ul>
+                    <li><a href="#link">prologue</a>
+                        <ul>
+                            <li><a href="#link">View</a></li>
+                            <li><a href="#link"> Play movie</a></li>
+                            <li><a href="#link">Tour</a></li>
+                            <li><a href="#link">Map</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#link">room</a>
+                        <ul>
+                            <li><a href="#link">Living&amp;Kitchen room</a></li>
+                            <li><a href="#link">Powder room</a></li>
+                            <li><a href="#link">Family room</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#link">special</a>
+                        <ul>
+                            <li><a href="#link">OceanView</a></li>
+                            <li><a href="#link">Present</a></li>
+                            <li><a href="#link">Swimming pool</a></li>
+                            <li><a href="#link">Playground</a></li>
+                            <li><a href="#link">Bedding&amp;Amenity</a></li>
+                            <li><a href="#link">Appliances</a></li>
+                            <li><a href="#link">Baby goods</a></li>
+                            <li><a href="#link">BBQ</a></li>
+                            <li><a href="#link">Outdoor&amp;Sunset</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#link">reservation</a>
+                        <ul>
+                            <li><a href="#link">Rservation</a></li>
+                            <li><a href="#link">실시간 예약</a></li>
+                            <li><a href="#link">Notice</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-cont">
+                <div class="ft-logo"><img src="../assets/images/common/f-logo.png" alt="남쪽아이"></div>
+                <p class="address">
+                    주소 : 전남 여수시 화양면 서우개길 100 <br>
+                    사업자번호 : 253-47-00803 (대표자 : 고윤아)<br>
+                    농어촌민박신고번호 : 15-여수-2023-0079<br>
+                    통신판매번호 : 제 2023-전남여수-0552 호
+                </p>
+                <ul class="sns-wrap">
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약"></a></li>
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_insta.png" alt="인스타그램"></a></li>
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그"></a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="inner-con hr">
+            <div class="left-cont">
+                <div class="admin">
+                    <a href="#link">관리자로그인</a>
+                </div>
+            </div>
+            <div class="right-cont">
+               <div class="copyright">COPYRIGHT ⓒ  South Kids Premium PoolVilla
+                <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인"></span>
+                <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
+               </div> 
+               
+            </div>
+            
+        </div>
+        
+    </div>
+</footer>    
+<!--푸터-->     
+</body>
 </html>

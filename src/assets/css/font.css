@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: "Lato-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: local(※),
+    url(../font/Lato-Light.eot) format("embedded-opentype"),
+    url(../font/Lato-Light.woff) format("woff"),
+    url(../font/Lato-Light.woff2) format("woff2")
+}
+
+@font-face{
+    font-family: "Lato-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),
+    url(../font/Lato-Regular.eot) format("embedded-opentype"),
+    url(../font/Lato-Regular.woff) format("woff"),
+    url(../font/Lato-Regular.woff2) format("woff2")
+}
+
+@font-face{
+    font-family: "NotoSerifKR-Medium";
+    font-style: normal;
+    font-weight: 500;
+    src: local(※),
+    url(../font/NotoSerifKR-Medium.eot) format("embedded-opentype"),
+    url(../font/NotoSerifKR-Medium.woff) format("woff"),
+    url(../font/NotoSerifKR-Medium.woff2) format("woff2")
+}
+
+@font-face{
+    font-family: "Pretendard-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),
+    url(../font/Pretendard-Regular.eot) format("embedded-opentype"),
+    url(../font/Pretendard-Regular.woff) format("woff"),
+    url(../font/Pretendard-Regular.woff2) format("woff2")
+}
+
+@font-face{
+    font-family: "Pretendard-Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),
+    url(../font/Pretendard-Medium.eot) format("embedded-opentype"),
+    url(../font/Pretendard-Medium.woff) format("woff"),
+    url(../font/Pretendard-Medium.woff2) format("woff2")
+}
+
+
+/* adobe fonts *************************************************************************/
+/* kelperStd lightExt disp */
+@font-face{ 
+    font-family: "kepler-light";
+    font-style: normal;
+    font-weight: 300;
+    src: local(※),
+    url(../font/kepler-light.eot) format("embedded-opentype"),
+    url(../font/kepler-light.woff) format("woff"),
+    url(../font/kepler-light.woff2) format("woff2")
+}
+@font-face{
+    font-family: "kepler-regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),
+    url(../font/kepler-regular.eot) format("embedded-opentype"),
+    url(../font/kepler-regular.woff) format("woff"),
+    url(../font/kepler-regular.woff2) format("woff2")
+}
+
+@font-face{
+    font-family: "miller-banner-light";
+    font-style: normal;
+    font-weight: 300;
+    src: local(※),
+    url(../font/miller-banner-light.eot) format("embedded-opentype"),
+    url(../font/miller-banner-light.woff) format("woff"),
+    url(../font/miller-banner-light.woff2) format("woff2")
+}
+
+
+@font-face{
+    font-family: "freight-sans-light";
+    font-style: normal;
+    font-weight: 400;
+    src: local(※),
+    url(../font/freight-sans-light.eot) format("embedded-opentype"),
+    url(../font/freight-sans-light.woff) format("woff"),
+    url(../font/freight-sans-light.woff2) format("woff2")
+}
+
