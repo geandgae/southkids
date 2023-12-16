@@ -228,14 +228,19 @@ button, i{color: #1d1d1d;}
 .scroll-obj.lineX{transform: scaleX(0); transform-origin: left;}
 .scroll-obj.lineX.on{transform: scaleX(1);}
 
-// .img-mask{display: block; transform: translateY(100%); overflow: hidden; position: relative;  width: 100%;  height: 100%;}
-// .img-mask.on{transform: translateY(0);}
-// .img-mask img{transform: translateY(-100%); transition: 1.4s;}
-// .img-mask.on img{transform: translateY(0%);}
-// .img-mask iframe{transform: translateY(-100%); transition: 1.4s;}
-// .img-mask.on iframe{transform: translateY(0%);}
-// .img-mask video{transform: translateY(-100%); transition: 1.4s;}
-// .img-mask.on video{transform: translateY(0%);}
+/* 서브 */
+.prologue-area {background:#fff url(../images/gallery/bg-prologue.png) 0 1240px no-repeat;}
+.prologue-area .prologue-box {width:1600px; height: 1786px; margin:0 auto; color:#948475; text-align: center; position: relative;}
+.prologue-area .prologue-box .tit {padding-top: 270px; font-size: 100px; font-family: "miller-banner-light",sans-serif;}
+.prologue-area .prologue-box .tit-bg {width:100%; font-size: 200px; opacity: .1; position: absolute; top:128px; font-family: "miller-banner-light",sans-serif; text-align: center;}
+.prologue-area .prologue-box .txt {padding-top: 160px; font-family: "NanumMyeongjoBold",sans-serif; font-size: 20px;}
+.prologue-area .prologue-box .txt2 {padding-top: 50px;font-size: 16px;}
+.prologue-area .prologue-box .txt3 {position: absolute; right: 0; font-size: 11px;}
+.prologue-area .prologue-box .img {position: absolute;}
+.prologue-area .prologue-box .img1 {top:505px;}
+.prologue-area .prologue-box .img2 {top:505px; right:0;}
+.prologue-area .prologue-box .img3 {top:1105px; right:538px;}
+.prologue-area .prologue-box .img4 {top:1105px; right:0;}
 
 
 
