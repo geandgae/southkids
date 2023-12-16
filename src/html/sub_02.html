@@ -9,19 +9,20 @@
    
 
     <!--메타태그-->
-    <link rel="shortcut icon" href="../assets//images/common/favicon.ico">
+    <link rel="shortcut icon" href="../assets/images/common/favicon.ico">
     <meta name="format-detection" content="telephone=no">
     <!--폰트어썸-->
     <script src="https://kit.fontawesome.com/664033e5f8.js" crossorigin="anonymous"></script>
     <!--폰트어썸-->
 
-    <link rel="stylesheet" href="../assets//css/font.css">
-    <link rel="stylesheet" href="../assets//css/swiper.css">    
-    <link rel="stylesheet" href="../assets//css/common.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/swiper.css">    
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link href="../assets/css/default.css" type="text/css" media="all" rel="stylesheet" />
 
-    <script src="../assets//js/jquery-1.11.3.min.js"></script>
-    <!-- <script src="../assets//js/jquery-3.6.0.min.js"></script> -->
-    <script src="../assets//js/swiper.js"></script>  
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="../assets/js/jquery-3.6.0.min.js"></script> -->
+    <script src="../assets/js/swiper.js"></script>  
 
     <!--스크롤 매직 cdn-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -35,7 +36,8 @@
     
 	
 
-    <script src="../assets//js/frontend.js"></script>
+    <script src="../assets/js/frontend.js"></script>
+    <script defer src="../assets/js/ui.js"></script>
 </head>
 <body>
     <!--헤더-->
@@ -43,7 +45,7 @@
         <div class="header-fixed-wrap">
             <div class="inner-con">
                 <div class="logo">
-                    <a href="#link"><img src="../assets//images/common/logo.png" alt="남쪽아이"></a>
+                    <a href="#link"><img src="../assets/images/common/logo.png" alt="남쪽아이"></a>
                 </div>
                 
                 <button class="menu-btn">
@@ -55,7 +57,7 @@
 
          <div class="header-contents-wrap">
             <div class="logo">
-                <a href="#link"><img src="../assets//images/common/t-logo.png" alt="남쪽아이"></a>
+                <a href="#link"><img src="../assets/images/common/t-logo.png" alt="남쪽아이"></a>
             </div>
             <button class="menu-btn">
                 <span class="line line1"></span>
@@ -64,7 +66,7 @@
             <div class="inner-con">
                 <div class="top-con">
                     <div class="menu-img-wrap">
-                        <img src="../assets//images/gallery/main/m-gnb.png" alt="">
+                        <img src="../assets/images/gallery/main/m-gnb.png" alt="">
                     </div>
                     <nav class="main-menu-wrap">
                         <ul class="menu-wrap">
@@ -88,13 +90,13 @@
                 <div class="bottom-con">
                     <ul class="sns-wrap">
                         <li>
-                            <a href="#link" target="_blank"><img src="../assets//images/common/ico_insta-t.png" alt="인스타검색"></a>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta-t.png" alt="인스타검색"></a>
                         </li>
                         <li>
-                            <a href="#link" target="_blank"><img src="../assets//images/common/ico_clock-t.png" alt="예약"></a>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock-t.png" alt="예약"></a>
                         </li>
                         <li>
-                            <a href="#link" target="_blank"><img src="../assets//images/common/ico_blog-t.png" alt="네이버블로그검색"></a>
+                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog-t.png" alt="네이버블로그검색"></a>
                         </li>
                     </ul>
                 </div>
@@ -102,7 +104,7 @@
         </div>       
     </header>    <!--헤더-->
     <main class="main-wrap top-slide-wrap">
-        <section class="con1">
+        <section class="con1" data-motion="tilde">
             <div class="top-overflow">
                 <div class="top-move-box">
                     <div class="main-slide-wrap">
@@ -122,14 +124,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" style="background-image: url(../assets//images/gallery/main/1.png);"></div>
-                            <div class="swiper-slide" style="background-image: url(../assets//images/gallery/main/2.png);"></div>
+                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/1.png);"></div>
+                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/2.png);"></div>
                             
                         </figure>
                     </div>
                     <!-- <div class="top-vdo-wrap">
                         <div class="top-vdo">
-                            <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets//https://player.vimeo.com/api/player.js"></script>                            
+                            <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                            
                         </div>
                     </div> -->
                     <div class="tit-wrap">
@@ -139,14 +141,14 @@
                             </div>
                              <div class="basic-slide-btn">
                                 <button class="prev-btn-wrap">
-                                    <a href="../assets//javascript:;" class="prev-btn">Prev</a>
+                                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
                                     <span class="slide-line"></span>
                                 </button>
                                 <div class="center-deco">
                                     <span class="center-cir"></span>
                                 </div>
                                 <button class="next-btn-wrap">
-                                    <a href="../assets//javascript:;" class="next-btn">Next</a>
+                                    <a href="../assets/javascript:;" class="next-btn">Next</a>
                                     <span class="slide-line"></span>
                                 </button>
                             </div>                         
@@ -172,10 +174,10 @@
                     일상 속 몸과 마음의 균형을 잡아보세요.<br><br>
                     이 공간에서 우리 아이들의 웃음소리가 가득하길,<br>
                     엄마, 아빠의 여유도 함께하길 바랍니다.</div>
-                <div class="img img1"><img src="../assets//images/gallery/prologue-1.png" alt=""></div>
-                <div class="img img2"><img src="../assets//images/gallery/prologue-2.png" alt=""></div>
-                <div class="img img3"><img src="../assets//images/gallery/prologue-3.png" alt=""></div>
-                <div class="img img4"><img src="../assets//images/gallery/prologue-4.png" alt=""></div>
+                <div class="img img1"><img src="../assets/images/gallery/prologue-1.png" alt=""></div>
+                <div class="img img2"><img src="../assets/images/gallery/prologue-2.png" alt=""></div>
+                <div class="img img3"><img src="../assets/images/gallery/prologue-3.png" alt=""></div>
+                <div class="img img4"><img src="../assets/images/gallery/prologue-4.png" alt=""></div>
                 <div class="txt3">
                     A place where you can feel emotions with the coastline that touches Yeosu's endless sea, <br>
 The sunset painted on the sea will record your special trip.
@@ -183,7 +185,7 @@ The sunset painted on the sea will record your special trip.
             </figure>                       
         </section>
         <section class="con5">
-            <div class="img1"><img src="../assets//images/trash-2.png" alt=""></div>
+            <div class="img1"><img src="../assets/images/trash-2.png" alt=""></div>
             <div class="txt-area">
                 <div class="inner-txt">
                     <p class="tit">Premium Poolvilla</p>
@@ -194,7 +196,7 @@ The sunset painted on the sea will record your special trip.
                     <div class="btn-area"><a href="#link">RESERVATION</a></div>
                 </div>
             </div>
-             <!-- <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets//https://player.vimeo.com/api/player.js"></script>                             -->
+             <!-- <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                             -->
         </section>
         
     </div>
@@ -247,7 +249,7 @@ The sunset painted on the sea will record your special trip.
                 </ul>
             </div>
             <div class="right-cont">
-                <div class="ft-logo"><img src="../assets//images/common/f-logo.png" alt="남쪽아이"></div>
+                <div class="ft-logo"><img src="../assets/images/common/f-logo.png" alt="남쪽아이"></div>
                 <p class="address">
                     주소 : 전남 여수시 화양면 서우개길 100 <br>
                     사업자번호 : 253-47-00803 (대표자 : 고윤아)<br>
@@ -255,9 +257,9 @@ The sunset painted on the sea will record your special trip.
                     통신판매번호 : 제 2023-전남여수-0552 호
                 </p>
                 <ul class="sns-wrap">
-                    <li><a href="#link" target="_blank"><img src="../assets//images/common/ico_clock.png" alt="실시간예약"></a></li>
-                    <li><a href="#link" target="_blank"><img src="../assets//images/common/ico_insta.png" alt="인스타그램"></a></li>
-                    <li><a href="#link" target="_blank"><img src="../assets//images/common/ico_blog.png" alt="네이버블로그"></a></li>
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약"></a></li>
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_insta.png" alt="인스타그램"></a></li>
+                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그"></a></li>
                 </ul>
             </div>
             
@@ -270,7 +272,7 @@ The sunset painted on the sea will record your special trip.
             </div>
             <div class="right-cont">
                <div class="copyright">COPYRIGHT ⓒ  South Kids Premium PoolVilla
-                <span><img src="../assets//images/common/f-aw.png" alt="언제나, 디자인"></span>
+                <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인"></span>
                 <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
                </div> 
                

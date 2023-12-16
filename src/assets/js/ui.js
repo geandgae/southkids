@@ -9,9 +9,9 @@
   window.addEventListener("scroll", () => {
     console.log(window.scrollY);
     if (window.scrollY > 200) {
-      motionTilde.classList.add("on");
+      motionTilde.classList.add("active");
     } else {
-      motionTilde.classList.remove("on");
+      motionTilde.classList.remove("active");
     }
   })
 
