@@ -1193,6 +1193,37 @@ button, i {
   height: 54px;
 }
 
+.room-area .room-box .img-area-bottom {
+  height: 1080px;
+  position: relative;
+}
+
+.room-area .room-box .img-area-bottom .img {
+  position: absolute;
+}
+
+.room-area .room-box .img-area-bottom .img1 {
+  top: 435px;
+  z-index: 20;
+}
+
+.room-area .room-box .img-area-bottom .img2 {
+  top: 235px;
+  left: 357px;
+  z-index: 10;
+}
+
+.room-area .room-box .img-area-bottom .img3 {
+  top: 130px;
+  left: 748px;
+  z-index: 10;
+}
+
+.room-area .room-box .img-area-bottom .img4 {
+  top: 333px;
+  left: 1168px;
+  z-index: 10;
+}
 
 /*scroll-animation*/
 .scroll-obj {
