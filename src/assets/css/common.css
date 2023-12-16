@@ -1298,6 +1298,101 @@ button, i {
 .special-area .special-box .txt-area .txt2 {
   margin-top: 30px;
 }
+
+.tour-area .tour-box {
+  width: 1600px;
+  margin: 0 auto 133px;
+  position: relative;
+}
+
+.tour-area .tour-box .tit-area {
+  text-align: center;
+}
+
+.tour-area .tour-box .tit-area .tit {
+  margin-top: 265px;
+  font-size: 100px;
+  font-family: "miller-banner-light", sans-serif;
+}
+
+.tour-area .tour-box .tit-area .tit-b {
+  width: 100%;
+  text-align: center;
+  font-size: 200px;
+  font-family: "miller-banner-light", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  top: -170px;
+  left: 0;
+}
+
+.tour-area .tour-box .cont-area {
+  display: flex;
+  margin-top: 170px;
+}
+
+.tour-area .tour-box .tour-nav-wrap {
+  width: 50%;
+}
+
+.tour-area .tour-box .tour-nav-wrap .on {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.tour-area .tour-box .tour-nav-wrap li {
+  margin-bottom: 10px;
+}
+
+.tour-area .tour-box .tour-list-wrap {
+  width: 50%;
+}
+
+.tour-area .tour-box .tour-list-wrap h3 {
+  margin-top: 43px;
+  font-size: 28px;
+  font-family: "NanumMyeongjoBold", sans-serif;
+}
+
+.tour-area .tour-box .tour-list-wrap h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tour-area .tour-box .tour-list-wrap .txt {
+  width: 700px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.reservation-area .reservation-box {
+  width: 1600px;
+  margin: 0 auto 133px;
+  position: relative;
+}
+
+.reservation-area .reservation-box .tit-area {
+  text-align: center;
+}
+
+.reservation-area .reservation-box .tit-area .tit {
+  margin-top: 265px;
+  font-size: 100px;
+  font-family: "miller-banner-light", sans-serif;
+}
+
+.reservation-area .reservation-box .tit-area .tit-b {
+  width: 100%;
+  text-align: center;
+  font-size: 200px;
+  font-family: "miller-banner-light", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  top: -170px;
+  left: 0;
+}
+
 /*scroll-animation*/
 .scroll-obj {
   transition: 1.4s;
