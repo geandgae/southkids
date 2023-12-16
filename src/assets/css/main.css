@@ -3,9 +3,57 @@
 [data-motion="tilde"] .top-overflow {
   border-radius: 0 !important;
   /* height: 911px; */
-  transition: all ease 0.5s;
+  transition: all ease 1.5s;
 }
 [data-motion="tilde"].active .top-overflow {
-  border-radius: 0 0 50% 50% !important;
+  border-radius: 0 0 0 110% !important;
   height: 50%;
 }
+
+[data-motion=tour] .tour-list-wrap li {
+  display: none;
+}
+[data-motion=tour] .tour-list-wrap li.on {
+  display: block;
+}
+.offerSwiper + .white-bg {
+  background-color: transparent !important;
+  z-index: 100 !important;
+  top: 0;
+}
+.offerSwiper {
+  width: 1150px;
+  overflow: hidden;
+}
+.offerSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* alt */
+/* .offerSwiper .white-bg {
+  background-color: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  position: static !important;
+  padding-top: -100px !important;
+}
+.offerSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.offerSwiper .img-group {
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.offerSwiper .ctrl {
+  width: 1600px;
+  text-align: right;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+} */

@@ -1,293 +1,348 @@
-
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>남쪽아이 sub04</title>
-   
 
     <!--메타태그-->
-    <link rel="shortcut icon" href="./resources/images/common/favicon.ico">
-    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../assets/images/common/favicon.ico" />
+    <meta name="format-detection" content="telephone=no" />
     <!--폰트어썸-->
     <script src="https://kit.fontawesome.com/664033e5f8.js" crossorigin="anonymous"></script>
     <!--폰트어썸-->
 
-    <link rel="stylesheet" href="./resources/css/font.css">
-    <link rel="stylesheet" href="./resources/css/swiper.css">    
-    <link rel="stylesheet" href="./resources/css/common.css">
+    <link href="../assets/css/default.css" type="text/css" media="all" rel="stylesheet" />
 
-    <script src="./resources/js/jquery-1.11.3.min.js"></script>
-    <!-- <script src="./resources/js/jquery-3.6.0.min.js"></script> -->
-    <script src="./resources/js/swiper.js"></script>  
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="../assets/js/swiper.js"></script> -->
 
     <!--스크롤 매직 cdn-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!--스크롤 매직 cdn-->
 
     <!--GSAP cdn-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <!--GSAP cdn-->
-    
-	
 
-    <script src="./resources/js/frontend.js"></script>
-</head>
-<body>
-    <!--헤더-->
+    <script src="../assets/js/frontend.js"></script>
+    <script defer src="../assets/js/ui.js"></script>
+  </head>
+  <body>
+    <!-- header -->
     <header class="hd">
-        <div class="header-fixed-wrap">
-            <div class="inner-con">
-                <div class="logo">
-                    <a href="#link"><img src="./resources/images/common/logo.png" alt="남쪽아이"></a>
-                </div>
-                
-                <button class="menu-btn">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>                        
-                </button>
-            </div>
-        </div>
+      <div class="header-fixed-wrap">
+        <div class="inner-con">
+          <div class="logo">
+            <a href="#link"><img src="../assets/images/common/logo.png" alt="남쪽아이" /></a>
+          </div>
 
-         <div class="header-contents-wrap">
-            <div class="logo">
-                <a href="#link"><img src="./resources/images/common/t-logo.png" alt="남쪽아이"></a>
+          <button class="menu-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header-contents-wrap">
+        <div class="logo">
+          <a href="#link"><img src="../assets/images/common/t-logo.png" alt="남쪽아이" /></a>
+        </div>
+        <button class="menu-btn">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </button>
+        <div class="inner-con">
+          <div class="top-con">
+            <div class="menu-img-wrap">
+              <img src="../assets/images/gallery/main/m-gnb.png" alt="" />
             </div>
-            <button class="menu-btn">
-                <span class="line line1"></span>
-                <span class="line line2"></span>                        
-            </button>
-            <div class="inner-con">
-                <div class="top-con">
-                    <div class="menu-img-wrap">
-                        <img src="./resources/images/gallery/main/m-gnb.png" alt="">
-                    </div>
-                    <nav class="main-menu-wrap">
-                        <ul class="menu-wrap">
-                            <li class="main-list">
-                                <a href="#link">PROLOGUE</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#link">rooms</a></li>
-                                    <li><a href="#link">special</a></li>
-                                    <li><a href="#link">tour</a></li>
-                                    <li><a href="#link">location</a></li>
-                                    <li><a href="#link">reservation</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="view">
-                            <li><a href="#link">View</a></li>
-                            <li><a href="#link">Play movie</a></li>
-                        </ul>
-                    </nav>
-                </div>                
-                <div class="bottom-con">
-                    <ul class="sns-wrap">
-                        <li>
-                            <a href="#link" target="_blank"><img src="./resources/images/common/ico_insta-t.png" alt="인스타검색"></a>
-                        </li>
-                        <li>
-                            <a href="#link" target="_blank"><img src="./resources/images/common/ico_clock-t.png" alt="예약"></a>
-                        </li>
-                        <li>
-                            <a href="#link" target="_blank"><img src="./resources/images/common/ico_blog-t.png" alt="네이버블로그검색"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>       
-    </header>    <!--헤더-->
+            <nav class="main-menu-wrap">
+              <ul class="menu-wrap">
+                <li class="main-list">
+                  <a href="#link">PROLOGUE</a>
+                  <ul class="sub-menu">
+                    <li><a href="#link">rooms</a></li>
+                    <li><a href="#link">special</a></li>
+                    <li><a href="#link">tour</a></li>
+                    <li><a href="#link">location</a></li>
+                    <li><a href="#link">reservation</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="view">
+                <li><a href="#link">View</a></li>
+                <li><a href="#link">Play movie</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="bottom-con">
+            <ul class="sns-wrap">
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta-t.png" alt="인스타검색" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock-t.png" alt="예약" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog-t.png" alt="네이버블로그검색" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
     <main class="main-wrap top-slide-wrap">
-        <section class="con1">
-            <div class="top-overflow">
-                <div class="top-move-box">
-                    <div class="main-slide-wrap">
-                        <figure class="swiper-wrapper">
-                            <div class="swiper-slide vdo-slide">
-                                <div class="top-vdo">
-                                    <iframe class="random1" src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
-                                    <iframe class="random2" src="https://player.vimeo.com/video/746758674?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
-                                    <script src="https://player.vimeo.com/api/player.js"></script>
-                                    <div class="movie-btn">
-                                        <a href="sub1_movie.html">
-                                            <!-- <div class="svg-txt"> -->
-                                            <div class="view-txt">
-                                                <i class="fa-solid fa-play" style="color:#948475"></i> WATCH MOVIE
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="background-image: url(./resources/images/gallery/main/1.png);"></div>
-                            <div class="swiper-slide" style="background-image: url(./resources/images/gallery/main/2.png);"></div>
-                            
-                        </figure>
+			<!-- section -->
+      <section class="con1" data-motion="tilde">
+        <div class="top-overflow">
+          <div class="top-move-box">
+            <div class="main-slide-wrap">
+              <figure class="swiper-wrapper">
+                <div class="swiper-slide vdo-slide">
+                  <div class="top-vdo">
+                    <iframe
+                      class="random1"
+                      src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen
+                    ></iframe>
+                    <iframe
+                      class="random2"
+                      src="https://player.vimeo.com/video/746758674?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen
+                    ></iframe>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="movie-btn">
+                      <a href="sub1_movie.html">
+                        <!-- <div class="svg-txt"> -->
+                        <div class="view-txt"><i class="fa-solid fa-play" style="color: #948475"></i> WATCH MOVIE</div>
+                      </a>
                     </div>
-                    <!-- <div class="top-vdo-wrap">
+                  </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/1.png)"></div>
+                <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/2.png)"></div>
+              </figure>
+            </div>
+            <!-- <div class="top-vdo-wrap">
                         <div class="top-vdo">
-                            <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="./resources/https://player.vimeo.com/api/player.js"></script>                            
+                            <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                            
                         </div>
                     </div> -->
-                    <div class="tit-wrap">
-                         <div class="inner-con">
-                             <div class="tit">                
-                                <div><i class="underline">South Kids Room</i></div>                
-                            </div>
-                             <div class="basic-slide-btn">
-                                <button class="prev-btn-wrap">
-                                    <a href="./resources/javascript:;" class="prev-btn">Prev</a>
-                                    <span class="slide-line"></span>
-                                </button>
-                                <div class="center-deco">
-                                    <span class="center-cir"></span>
-                                </div>
-                                <button class="next-btn-wrap">
-                                    <a href="./resources/javascript:;" class="next-btn">Next</a>
-                                    <span class="slide-line"></span>
-                                </button>
-                            </div>                         
-                            
-                        </div>
-                    </div>
-                    
+            <div class="tit-wrap">
+              <div class="inner-con">
+                <div class="tit">
+                  <div><i class="underline">South Kids Room</i></div>
                 </div>
+                <div class="basic-slide-btn">
+                  <button class="prev-btn-wrap">
+                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
+                    <span class="slide-line"></span>
+                  </button>
+                  <div class="center-deco">
+                    <span class="center-cir"></span>
+                  </div>
+                  <button class="next-btn-wrap">
+                    <a href="../assets/javascript:;" class="next-btn">Next</a>
+                    <span class="slide-line"></span>
+                  </button>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="special-area">
-            <figure class="special-box">
-                <div class="tit-area">
-                    <p class="tit">Swimming pool</p>
-                    <p class="tit-b">Special offer</p>
-                </div>
-                <div class="cont-area">
-                    <!-- <div class="round-txt">South Kids Premium Pool Villa South Kids Premium Pool Villa South Kids Premium </div> -->
-                    <div class="round-txt">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1913.46 1925.18">
-                        <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="matrix(0.01, -1, 1, 0.01, 391.44, 1069.66)">T</text><text class="cls-1" transform="matrix(0.19, -0.98, 0.98, 0.19, 390.8, 966.29)">h</text><text class="cls-1" transform="matrix(0.37, -0.93, 0.93, 0.37, 409.95, 864.66)">e</text><text class="cls-1" transform="matrix(0.49, -0.87, 0.87, 0.49, 448.79, 771.96)"> </text><text class="cls-1" transform="matrix(0.65, -0.76, 0.76, 0.65, 454.27, 742.28)">W</text><text class="cls-1" transform="matrix(0.83, -0.56, 0.56, 0.83, 580.07, 601.86)">h</text><text class="cls-1" transform="matrix(0.89, -0.45, 0.45, 0.89, 668.39, 544.33)">i</text><text class="cls-1" transform="matrix(0.93, -0.37, 0.37, 0.93, 693.3, 530.35)">t</text><text class="cls-1" transform="matrix(0.97, -0.24, 0.24, 0.97, 745.41, 506.57)">e</text><text class="cls-1" transform="matrix(0.99, -0.11, 0.11, 0.99, 843.32, 483.92)"> </text><text class="cls-1" transform="matrix(1, 0.04, -0.04, 1, 877.61, 475.16)">&amp;</text><text class="cls-1" transform="matrix(0.98, 0.2, -0.2, 0.98, 1011.19, 483.87)"> </text><text class="cls-1" transform="matrix(0.95, 0.32, -0.32, 0.95, 1046.92, 488.28)">E</text><text class="cls-1" transform="matrix(0.88, 0.47, -0.47, 0.88, 1140.98, 519.73)">x</text><text class="cls-1" transform="matrix(0.79, 0.62, -0.62, 0.79, 1209.49, 553.52)">o</text><text class="cls-1" transform="matrix(0.68, 0.73, -0.73, 0.68, 1292.85, 619.61)">t</text><text class="cls-1" transform="matrix(0.62, 0.78, -0.78, 0.62, 1335.9, 665.89)">i</text><text class="cls-1" transform="matrix(0.53, 0.85, -0.85, 0.53, 1355.25, 686.17)">c</text><text class="cls-1" transform="matrix(0.42, 0.91, -0.91, 0.42, 1404.92, 768.41)"> </text><text class="cls-1" transform="matrix(0.27, 0.96, -0.96, 0.27, 1423.9, 798.26)">H</text><text class="cls-1" transform="matrix(0.06, 1, -1, 0.06, 1459.45, 921.82)">o</text><text class="cls-1" transform="matrix(-0.14, 0.99, -0.99, -0.14, 1466.56, 1031.45)">u</text><text class="cls-1" transform="matrix(-0.3, 0.95, -0.95, -0.3, 1451.94, 1134.14)">s</text><text class="cls-1" transform="matrix(-0.46, 0.89, -0.89, -0.46, 1430.32, 1208.42)">e</text></g></g></svg>
-                    </div>
-                        <div class="img-area">
-                        <div class="img1"><img src="./resources/images/gallery/special-1.png" alt=""></div>
-                        <div class="img2"><img src="./resources/images/gallery/special-2.png" alt=""></div>
-                        <div class="img3"><img src="./resources/images/gallery/special-3.png" alt=""></div>
-                    </div>
-                    <div class="txt-area">
-                        <p class="txt1">우리끼리 가족끼리 프라이빗한 물놀이가 가능해요.</p>
-                        <p class="txt2">4계절 이용 가능한 미온수 기본 제공 실내수영장 <br>
-                            아이들의 안전을 위한 미끄럼방지 마감 시공<br>
-                            상수도 사용 친환경 염소 발생 해수풀 수질관리<br>
-                            물놀이 중에도 펼쳐지는 여수 바다와 남쪽아이 만의 감성 아트월</p>
-                    </div>
-                </div>
-            </figure>                       
-        </section>
-        <section class="special-area2">
-            <figure class="special-box2"><img src="./resources/images/gallery/special-4.png" alt=""></figure>
-        </section>
-        <section class="con4">
-            <div class="bg-txt">SPECIAL OFFER</div>
-            <div class="inner-cont">
-                <div class="img1"><img src="./resources/images/gallery/main/m4-1.png" alt=""></div>
-                <div class="img2"><img src="./resources/images/gallery/main/m4-2.png" alt=""></div>
-                <div class="img3"><img src="./resources/images/gallery/main/m4-3.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+			<!-- //section -->
+			<!-- section -->
+      <section class="special-area">
+        <figure class="special-box">
+          <div class="tit-area">
+            <p class="tit" data-aos="fade-left" data-aos-duration="1200">Swimming pool</p>
+            <p class="tit-b" data-aos="fade-right" data-aos-duration="1200">Special offer</p>
+          </div>
+          <div class="cont-area">
+            <!-- <div class="round-txt">South Kids Premium Pool Villa South Kids Premium Pool Villa South Kids Premium </div> -->
+            <div class="round-txt">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1913.46 1925.18">
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <text class="cls-1" transform="matrix(0.01, -1, 1, 0.01, 391.44, 1069.66)">T</text>
+                    <text class="cls-1" transform="matrix(0.19, -0.98, 0.98, 0.19, 390.8, 966.29)">h</text>
+                    <text class="cls-1" transform="matrix(0.37, -0.93, 0.93, 0.37, 409.95, 864.66)">e</text>
+                    <text class="cls-1" transform="matrix(0.49, -0.87, 0.87, 0.49, 448.79, 771.96)"></text>
+                    <text class="cls-1" transform="matrix(0.65, -0.76, 0.76, 0.65, 454.27, 742.28)">W</text>
+                    <text class="cls-1" transform="matrix(0.83, -0.56, 0.56, 0.83, 580.07, 601.86)">h</text>
+                    <text class="cls-1" transform="matrix(0.89, -0.45, 0.45, 0.89, 668.39, 544.33)">i</text>
+                    <text class="cls-1" transform="matrix(0.93, -0.37, 0.37, 0.93, 693.3, 530.35)">t</text>
+                    <text class="cls-1" transform="matrix(0.97, -0.24, 0.24, 0.97, 745.41, 506.57)">e</text>
+                    <text class="cls-1" transform="matrix(0.99, -0.11, 0.11, 0.99, 843.32, 483.92)"></text>
+                    <text class="cls-1" transform="matrix(1, 0.04, -0.04, 1, 877.61, 475.16)">&amp;</text>
+                    <text class="cls-1" transform="matrix(0.98, 0.2, -0.2, 0.98, 1011.19, 483.87)"></text>
+                    <text class="cls-1" transform="matrix(0.95, 0.32, -0.32, 0.95, 1046.92, 488.28)">E</text>
+                    <text class="cls-1" transform="matrix(0.88, 0.47, -0.47, 0.88, 1140.98, 519.73)">x</text>
+                    <text class="cls-1" transform="matrix(0.79, 0.62, -0.62, 0.79, 1209.49, 553.52)">o</text>
+                    <text class="cls-1" transform="matrix(0.68, 0.73, -0.73, 0.68, 1292.85, 619.61)">t</text>
+                    <text class="cls-1" transform="matrix(0.62, 0.78, -0.78, 0.62, 1335.9, 665.89)">i</text>
+                    <text class="cls-1" transform="matrix(0.53, 0.85, -0.85, 0.53, 1355.25, 686.17)">c</text>
+                    <text class="cls-1" transform="matrix(0.42, 0.91, -0.91, 0.42, 1404.92, 768.41)"></text>
+                    <text class="cls-1" transform="matrix(0.27, 0.96, -0.96, 0.27, 1423.9, 798.26)">H</text>
+                    <text class="cls-1" transform="matrix(0.06, 1, -1, 0.06, 1459.45, 921.82)">o</text>
+                    <text class="cls-1" transform="matrix(-0.14, 0.99, -0.99, -0.14, 1466.56, 1031.45)">u</text>
+                    <text class="cls-1" transform="matrix(-0.3, 0.95, -0.95, -0.3, 1451.94, 1134.14)">s</text>
+                    <text class="cls-1" transform="matrix(-0.46, 0.89, -0.89, -0.46, 1430.32, 1208.42)">e</text>
+                  </g>
+                </g>
+              </svg>
             </div>
-            <div class="white-bg">
-                <p class="tit">OceanView</p>
-                <P class="txt">푸른 바다를 보며 소원을 빌면 이루어질 거예요. <br>
-                    먼발치 여수와 고흥을 잇는 팔영대교, <br>
-                    에메랄드 빛의 해안과 노을이 아름다운 여수 바다</P> 
-                <div class="btns-area">
-                    이전 다음
-                </div>
+            <div class="img-area">
+              <div class="img1" data-aos="fade-up" data-aos-duration="1200"><img src="../assets/images/gallery/special-1.png" alt="" /></div>
+              <div class="img2" data-aos="fade-up" data-aos-duration="1200"><img src="../assets/images/gallery/special-2.png" alt="" /></div>
+              <div class="img3" data-aos="fade-up" data-aos-duration="1200"><img src="../assets/images/gallery/special-3.png" alt="" /></div>
             </div>
-        </section>
-        
-    </div>
-</figure>     
-     
-            
-        </section>
+            <div class="txt-area">
+              <p class="txt1">우리끼리 가족끼리 프라이빗한 물놀이가 가능해요.</p>
+              <p class="txt2">
+                4계절 이용 가능한 미온수 기본 제공 실내수영장 <br />
+                아이들의 안전을 위한 미끄럼방지 마감 시공<br />
+                상수도 사용 친환경 염소 발생 해수풀 수질관리<br />
+                물놀이 중에도 펼쳐지는 여수 바다와 남쪽아이 만의 감성 아트월
+              </p>
+            </div>
+          </div>
+        </figure>
+      </section>
+			<!-- //section -->
+			<!-- section -->
+      <section class="special-area2">
+        <figure class="special-box2"><img src="../assets/images/gallery/special-4.png" alt="" /></figure>
+      </section>
+			<!-- //section -->
+			<!-- section -->
+      <section class="con4">
+        <div class="bg-txt">SPECIAL OFFER</div>
+        <div class="inner-cont">
+          <div class="img1"><img src="../assets/images/gallery/main/m4-1.png" alt="" /></div>
+          <div class="img2"><img src="../assets/images/gallery/main/m4-2.png" alt="" /></div>
+          <div class="img3"><img src="../assets/images/gallery/main/m4-3.png" alt="" /></div>
+        </div>
+        <div class="white-bg">
+          <p class="tit">OceanView</p>
+          <p class="txt">
+            푸른 바다를 보며 소원을 빌면 이루어질 거예요. <br />
+            먼발치 여수와 고흥을 잇는 팔영대교, <br />
+            에메랄드 빛의 해안과 노을이 아름다운 여수 바다
+          </p>
+          <div class="btns-area">이전 다음</div>
+        </div>
+      </section>
+			<!-- //section -->
     </main>
-    <!--푸터-->
-<footer class="ft"> 
-    <div class="ft-overflow">
+    <!-- //main -->
+
+    <!-- footer -->
+    <footer class="ft">
+      <div class="ft-overflow">
         <div class="inner-con">
-            <div class="left-cont">
+          <div class="left-cont">
+            <ul>
+              <li>
+                <a href="#link">prologue</a>
                 <ul>
-                    <li><a href="#link">prologue</a>
-                        <ul>
-                            <li><a href="#link">View</a></li>
-                            <li><a href="#link"> Play movie</a></li>
-                            <li><a href="#link">Tour</a></li>
-                            <li><a href="#link">Map</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">room</a>
-                        <ul>
-                            <li><a href="#link">Living&amp;Kitchen room</a></li>
-                            <li><a href="#link">Powder room</a></li>
-                            <li><a href="#link">Family room</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">special</a>
-                        <ul>
-                            <li><a href="#link">OceanView</a></li>
-                            <li><a href="#link">Present</a></li>
-                            <li><a href="#link">Swimming pool</a></li>
-                            <li><a href="#link">Playground</a></li>
-                            <li><a href="#link">Bedding&amp;Amenity</a></li>
-                            <li><a href="#link">Appliances</a></li>
-                            <li><a href="#link">Baby goods</a></li>
-                            <li><a href="#link">BBQ</a></li>
-                            <li><a href="#link">Outdoor&amp;Sunset</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">reservation</a>
-                        <ul>
-                            <li><a href="#link">Rservation</a></li>
-                            <li><a href="#link">실시간 예약</a></li>
-                            <li><a href="#link">Notice</a></li>
-                        </ul>
-                    </li>
+                  <li><a href="#link">View</a></li>
+                  <li><a href="#link"> Play movie</a></li>
+                  <li><a href="#link">Tour</a></li>
+                  <li><a href="#link">Map</a></li>
                 </ul>
-            </div>
-            <div class="right-cont">
-                <div class="ft-logo"><img src="./resources/images/common/f-logo.png" alt="남쪽아이"></div>
-                <p class="address">
-                    주소 : 전남 여수시 화양면 서우개길 100 <br>
-                    사업자번호 : 253-47-00803 (대표자 : 고윤아)<br>
-                    농어촌민박신고번호 : 15-여수-2023-0079<br>
-                    통신판매번호 : 제 2023-전남여수-0552 호
-                </p>
-                <ul class="sns-wrap">
-                    <li><a href="#link" target="_blank"><img src="./resources/images/common/ico_clock.png" alt="실시간예약"></a></li>
-                    <li><a href="#link" target="_blank"><img src="./resources/images/common/ico_insta.png" alt="인스타그램"></a></li>
-                    <li><a href="#link" target="_blank"><img src="./resources/images/common/ico_blog.png" alt="네이버블로그"></a></li>
+              </li>
+              <li>
+                <a href="#link">room</a>
+                <ul>
+                  <li><a href="#link">Living&amp;Kitchen room</a></li>
+                  <li><a href="#link">Powder room</a></li>
+                  <li><a href="#link">Family room</a></li>
                 </ul>
-            </div>
-            
+              </li>
+              <li>
+                <a href="#link">special</a>
+                <ul>
+                  <li><a href="#link">OceanView</a></li>
+                  <li><a href="#link">Present</a></li>
+                  <li><a href="#link">Swimming pool</a></li>
+                  <li><a href="#link">Playground</a></li>
+                  <li><a href="#link">Bedding&amp;Amenity</a></li>
+                  <li><a href="#link">Appliances</a></li>
+                  <li><a href="#link">Baby goods</a></li>
+                  <li><a href="#link">BBQ</a></li>
+                  <li><a href="#link">Outdoor&amp;Sunset</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#link">reservation</a>
+                <ul>
+                  <li><a href="#link">Rservation</a></li>
+                  <li><a href="#link">실시간 예약</a></li>
+                  <li><a href="#link">Notice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="right-cont">
+            <div class="ft-logo"><img src="../assets/images/common/f-logo.png" alt="남쪽아이" /></div>
+            <p class="address">
+              주소 : 전남 여수시 화양면 서우개길 100 <br />
+              사업자번호 : 253-47-00803 (대표자 : 고윤아)<br />
+              농어촌민박신고번호 : 15-여수-2023-0079<br />
+              통신판매번호 : 제 2023-전남여수-0552 호
+            </p>
+            <ul class="sns-wrap">
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta.png" alt="인스타그램" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="inner-con hr">
-            <div class="left-cont">
-                <div class="admin">
-                    <a href="#link">관리자로그인</a>
-                </div>
+          <div class="left-cont">
+            <div class="admin">
+              <a href="#link">관리자로그인</a>
             </div>
-            <div class="right-cont">
-               <div class="copyright">COPYRIGHT ⓒ  South Kids Premium PoolVilla
-                <span><img src="./resources/images/common/f-aw.png" alt="언제나, 디자인"></span>
-                <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
-               </div> 
-               
+          </div>
+          <div class="right-cont">
+            <div class="copyright">
+              COPYRIGHT ⓒ South Kids Premium PoolVilla
+              <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인" /></span>
+              <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
             </div>
-            
+          </div>
         </div>
-        
-    </div>
-</footer>    
-<!--푸터-->     
-</body>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
 </html>

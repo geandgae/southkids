@@ -2,5 +2,8 @@
 
 /* @import url("url.css"); */
 @import "./reset.css";
+@import "./font.css";
+@import "./swiper.css";
+@import "./common.css";
 @import "./main.css";
 @import "./aos.css";

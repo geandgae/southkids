@@ -1,287 +1,313 @@
-
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>남쪽아이 sub02</title>
-   
 
     <!--메타태그-->
-    <link rel="shortcut icon" href="../assets/images/common/favicon.ico">
-    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../assets/images/common/favicon.ico" />
+    <meta name="format-detection" content="telephone=no" />
     <!--폰트어썸-->
     <script src="https://kit.fontawesome.com/664033e5f8.js" crossorigin="anonymous"></script>
     <!--폰트어썸-->
 
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="stylesheet" href="../assets/css/swiper.css">    
-    <link rel="stylesheet" href="../assets/css/common.css">
     <link href="../assets/css/default.css" type="text/css" media="all" rel="stylesheet" />
 
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
     <script src="../assets/js/jquery-1.11.3.min.js"></script>
-    <!-- <script src="../assets/js/jquery-3.6.0.min.js"></script> -->
-    <script src="../assets/js/swiper.js"></script>  
+    <!-- <script src="../assets/js/swiper.js"></script> -->
 
     <!--스크롤 매직 cdn-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <!--스크롤 매직 cdn-->
 
     <!--GSAP cdn-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <!--GSAP cdn-->
-    
-	
 
     <script src="../assets/js/frontend.js"></script>
     <script defer src="../assets/js/ui.js"></script>
-</head>
-<body>
-    <!--헤더-->
+  </head>
+  <body>
+    <!-- header -->
     <header class="hd">
-        <div class="header-fixed-wrap">
-            <div class="inner-con">
-                <div class="logo">
-                    <a href="#link"><img src="../assets/images/common/logo.png" alt="남쪽아이"></a>
-                </div>
-                
-                <button class="menu-btn">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>                        
-                </button>
-            </div>
-        </div>
+      <div class="header-fixed-wrap">
+        <div class="inner-con">
+          <div class="logo">
+            <a href="#link"><img src="../assets/images/common/logo.png" alt="남쪽아이" /></a>
+          </div>
 
-         <div class="header-contents-wrap">
-            <div class="logo">
-                <a href="#link"><img src="../assets/images/common/t-logo.png" alt="남쪽아이"></a>
+          <button class="menu-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="header-contents-wrap">
+        <div class="logo">
+          <a href="#link"><img src="../assets/images/common/t-logo.png" alt="남쪽아이" /></a>
+        </div>
+        <button class="menu-btn">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+        </button>
+        <div class="inner-con">
+          <div class="top-con">
+            <div class="menu-img-wrap">
+              <img src="../assets/images/gallery/main/m-gnb.png" alt="" />
             </div>
-            <button class="menu-btn">
-                <span class="line line1"></span>
-                <span class="line line2"></span>                        
-            </button>
-            <div class="inner-con">
-                <div class="top-con">
-                    <div class="menu-img-wrap">
-                        <img src="../assets/images/gallery/main/m-gnb.png" alt="">
-                    </div>
-                    <nav class="main-menu-wrap">
-                        <ul class="menu-wrap">
-                            <li class="main-list">
-                                <a href="#link">PROLOGUE</a>
-                                <ul class="sub-menu">
-                                    <li><a href="#link">rooms</a></li>
-                                    <li><a href="#link">special</a></li>
-                                    <li><a href="#link">tour</a></li>
-                                    <li><a href="#link">location</a></li>
-                                    <li><a href="#link">reservation</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="view">
-                            <li><a href="#link">View</a></li>
-                            <li><a href="#link">Play movie</a></li>
-                        </ul>
-                    </nav>
-                </div>                
-                <div class="bottom-con">
-                    <ul class="sns-wrap">
-                        <li>
-                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta-t.png" alt="인스타검색"></a>
-                        </li>
-                        <li>
-                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock-t.png" alt="예약"></a>
-                        </li>
-                        <li>
-                            <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog-t.png" alt="네이버블로그검색"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>       
-    </header>    <!--헤더-->
+            <nav class="main-menu-wrap">
+              <ul class="menu-wrap">
+                <li class="main-list">
+                  <a href="#link">PROLOGUE</a>
+                  <ul class="sub-menu">
+                    <li><a href="#link">rooms</a></li>
+                    <li><a href="#link">special</a></li>
+                    <li><a href="#link">tour</a></li>
+                    <li><a href="#link">location</a></li>
+                    <li><a href="#link">reservation</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="view">
+                <li><a href="#link">View</a></li>
+                <li><a href="#link">Play movie</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="bottom-con">
+            <ul class="sns-wrap">
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta-t.png" alt="인스타검색" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock-t.png" alt="예약" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog-t.png" alt="네이버블로그검색" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
     <main class="main-wrap top-slide-wrap">
-        <section class="con1" data-motion="tilde">
-            <div class="top-overflow">
-                <div class="top-move-box">
-                    <div class="main-slide-wrap">
-                        <figure class="swiper-wrapper">
-                            <div class="swiper-slide vdo-slide">
-                                <div class="top-vdo">
-                                    <iframe class="random1" src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
-                                    <iframe class="random2" src="https://player.vimeo.com/video/746758674?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe>
-                                    <script src="https://player.vimeo.com/api/player.js"></script>
-                                    <div class="movie-btn">
-                                        <a href="sub1_movie.html">
-                                            <!-- <div class="svg-txt"> -->
-                                            <div class="view-txt">
-                                                <i class="fa-solid fa-play" style="color:#948475"></i> WATCH MOVIE
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/1.png);"></div>
-                            <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/2.png);"></div>
-                            
-                        </figure>
+			<!-- section -->
+      <section class="con1" data-motion="tilde">
+        <div class="top-overflow">
+          <div class="top-move-box">
+            <div class="main-slide-wrap">
+              <figure class="swiper-wrapper">
+                <div class="swiper-slide vdo-slide">
+                  <div class="top-vdo">
+                    <iframe
+                      class="random1"
+                      src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen
+                    ></iframe>
+                    <iframe
+                      class="random2"
+                      src="https://player.vimeo.com/video/746758674?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=0&muted=1&autopause=0&controls=-0"
+                      style="z-index: 1; overflow: hidden"
+                      frameborder="0"
+                      allow="autoplay;loop fullscreen"
+                      allowfullscreen
+                    ></iframe>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                    <div class="movie-btn">
+                      <a href="sub1_movie.html">
+                        <!-- <div class="svg-txt"> -->
+                        <div class="view-txt"><i class="fa-solid fa-play" style="color: #948475"></i> WATCH MOVIE</div>
+                      </a>
                     </div>
-                    <!-- <div class="top-vdo-wrap">
+                  </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/1.png)"></div>
+                <div class="swiper-slide" style="background-image: url(../assets/images/gallery/main/2.png)"></div>
+              </figure>
+            </div>
+            <!-- <div class="top-vdo-wrap">
                         <div class="top-vdo">
                             <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                            
                         </div>
                     </div> -->
-                    <div class="tit-wrap">
-                         <div class="inner-con">
-                             <div class="tit">                
-                                <div><i class="underline">prologue</i></div>                
-                            </div>
-                             <div class="basic-slide-btn">
-                                <button class="prev-btn-wrap">
-                                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
-                                    <span class="slide-line"></span>
-                                </button>
-                                <div class="center-deco">
-                                    <span class="center-cir"></span>
-                                </div>
-                                <button class="next-btn-wrap">
-                                    <a href="../assets/javascript:;" class="next-btn">Next</a>
-                                    <span class="slide-line"></span>
-                                </button>
-                            </div>                         
-                            
-                        </div>
-                    </div>
-                    
+            <div class="tit-wrap">
+              <div class="inner-con">
+                <div class="tit">
+                  <div><i class="underline">prologue</i></div>
                 </div>
+                <div class="basic-slide-btn">
+                  <button class="prev-btn-wrap">
+                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
+                    <span class="slide-line"></span>
+                  </button>
+                  <div class="center-deco">
+                    <span class="center-cir"></span>
+                  </div>
+                  <button class="next-btn-wrap">
+                    <a href="../assets/javascript:;" class="next-btn">Next</a>
+                    <span class="slide-line"></span>
+                  </button>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="prologue-area">
-            <figure class="prologue-box">
-                <div class="tit">Prologue</div>
-                <div class="tit-bg">South Kids</div>
-                <div class="txt">‘여수 바다, 해안과 노을이 함께 하는, <br>
-                    오션뷰 감성 독채풀빌라’</div>
-                <div class="txt2">'남쪽아이'는 엄마, 아빠, 그리고 우리 아이들의 <br>
-                    낭만같은 여유와 휴식이 있는 공간입니다.<br><br>
-                    휴양지에서의 품격 있는 프라이빗 풀빌라 문화를<br>
-                    단 한팀만을 위해 제공하고 있습니다.<br><br>
-                    아이들과 아름다운 석양을 바라보며 소원을 빌어보세요.<br><br>
-                    좋은 사람들과 즐거운 시간을 함께 하며<br>
-                    일상 속 몸과 마음의 균형을 잡아보세요.<br><br>
-                    이 공간에서 우리 아이들의 웃음소리가 가득하길,<br>
-                    엄마, 아빠의 여유도 함께하길 바랍니다.</div>
-                <div class="img img1"><img src="../assets/images/gallery/prologue-1.png" alt=""></div>
-                <div class="img img2"><img src="../assets/images/gallery/prologue-2.png" alt=""></div>
-                <div class="img img3"><img src="../assets/images/gallery/prologue-3.png" alt=""></div>
-                <div class="img img4"><img src="../assets/images/gallery/prologue-4.png" alt=""></div>
-                <div class="txt3">
-                    A place where you can feel emotions with the coastline that touches Yeosu's endless sea, <br>
-The sunset painted on the sea will record your special trip.
-                </div>
-            </figure>                       
-        </section>
-        <section class="con5">
-            <div class="img1"><img src="../assets/images/trash-2.png" alt=""></div>
-            <div class="txt-area">
-                <div class="inner-txt">
-                    <p class="tit">Premium Poolvilla</p>
-                    <p class="txt">SOUTH KIDS</p>
-                    <p class="txt2">‘여수 바다, 해안과 노을이 함께 하는 오션뷰 감성 독채풀빌라’ <br><br>
-                        '남쪽아이'는 엄마, 아빠, 그리고 우리 아이들의 <br>
-                        낭만같은 여유와 휴식이 있는 공간입니다.</p>
-                    <div class="btn-area"><a href="#link">RESERVATION</a></div>
-                </div>
-            </div>
-             <!-- <iframe src="https://player.vimeo.com/video/744867925?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1&muted=1&autopause=0&controls=-0" style="z-index:1;overflow:hidden;" frameborder="0" allow="autoplay;loop fullscreen" allowfullscreen></iframe><script src="../assets/https://player.vimeo.com/api/player.js"></script>                             -->
-        </section>
-        
-    </div>
-</figure>     
-     
-            
-        </section>
+          </div>
+        </div>
+      </section>
+			<!-- //section -->
+			<!-- section -->
+      <section class="prologue-area">
+        <figure class="prologue-box">
+          <div class="tit">Prologue</div>
+          <div class="tit-bg">South Kids</div>
+          <div class="txt">
+            ‘여수 바다, 해안과 노을이 함께 하는, <br />
+            오션뷰 감성 독채풀빌라’
+          </div>
+          <div class="txt2">
+            '남쪽아이'는 엄마, 아빠, 그리고 우리 아이들의 <br />
+            낭만같은 여유와 휴식이 있는 공간입니다.<br /><br />
+            휴양지에서의 품격 있는 프라이빗 풀빌라 문화를<br />
+            단 한팀만을 위해 제공하고 있습니다.<br /><br />
+            아이들과 아름다운 석양을 바라보며 소원을 빌어보세요.<br /><br />
+            좋은 사람들과 즐거운 시간을 함께 하며<br />
+            일상 속 몸과 마음의 균형을 잡아보세요.<br /><br />
+            이 공간에서 우리 아이들의 웃음소리가 가득하길,<br />
+            엄마, 아빠의 여유도 함께하길 바랍니다.
+          </div>
+          <div class="img img1" data-aos="fade-down" data-aos-duration="1200"><img src="../assets/images/gallery/prologue-1.png" alt="" /></div>
+          <div class="img img2" data-aos="fade-up" data-aos-duration="1200"><img src="../assets/images/gallery/prologue-2.png" alt="" /></div>
+          <div class="img img3" data-aos="fade-up" data-aos-duration="1200"><img src="../assets/images/gallery/prologue-3.png" alt="" /></div>
+          <div class="img img4" data-aos="fade-down" data-aos-duration="1200"><img src="../assets/images/gallery/prologue-4.png" alt="" /></div>
+          <div class="txt3">
+            A place where you can feel emotions with the coastline that touches Yeosu's endless sea, <br />
+            The sunset painted on the sea will record your special trip.
+          </div>
+        </figure>
+      </section>
+			<!-- //section -->
+			<!-- section -->
+      <section class="con5">
+        <div class="img1"><img src="../assets/images/trash-2.png" alt="" /></div>
+        <div class="txt-area">
+          <div class="inner-txt">
+            <p class="tit">Premium Poolvilla</p>
+            <p class="txt">SOUTH KIDS</p>
+            <p class="txt2">
+              ‘여수 바다, 해안과 노을이 함께 하는 오션뷰 감성 독채풀빌라’ <br /><br />
+              '남쪽아이'는 엄마, 아빠, 그리고 우리 아이들의 <br />
+              낭만같은 여유와 휴식이 있는 공간입니다.
+            </p>
+            <div class="btn-area"><a href="#link">RESERVATION</a></div>
+          </div>
+        </div>
+      </section>
+			<!-- //section -->
     </main>
-    <!--푸터-->
-<footer class="ft"> 
-    <div class="ft-overflow">
+    <!-- //main -->
+
+    <!-- footer -->
+    <footer class="ft">
+      <div class="ft-overflow">
         <div class="inner-con">
-            <div class="left-cont">
+          <div class="left-cont">
+            <ul>
+              <li>
+                <a href="#link">prologue</a>
                 <ul>
-                    <li><a href="#link">prologue</a>
-                        <ul>
-                            <li><a href="#link">View</a></li>
-                            <li><a href="#link"> Play movie</a></li>
-                            <li><a href="#link">Tour</a></li>
-                            <li><a href="#link">Map</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">room</a>
-                        <ul>
-                            <li><a href="#link">Living&amp;Kitchen room</a></li>
-                            <li><a href="#link">Powder room</a></li>
-                            <li><a href="#link">Family room</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">special</a>
-                        <ul>
-                            <li><a href="#link">OceanView</a></li>
-                            <li><a href="#link">Present</a></li>
-                            <li><a href="#link">Swimming pool</a></li>
-                            <li><a href="#link">Playground</a></li>
-                            <li><a href="#link">Bedding&amp;Amenity</a></li>
-                            <li><a href="#link">Appliances</a></li>
-                            <li><a href="#link">Baby goods</a></li>
-                            <li><a href="#link">BBQ</a></li>
-                            <li><a href="#link">Outdoor&amp;Sunset</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#link">reservation</a>
-                        <ul>
-                            <li><a href="#link">Rservation</a></li>
-                            <li><a href="#link">실시간 예약</a></li>
-                            <li><a href="#link">Notice</a></li>
-                        </ul>
-                    </li>
+                  <li><a href="#link">View</a></li>
+                  <li><a href="#link"> Play movie</a></li>
+                  <li><a href="#link">Tour</a></li>
+                  <li><a href="#link">Map</a></li>
                 </ul>
-            </div>
-            <div class="right-cont">
-                <div class="ft-logo"><img src="../assets/images/common/f-logo.png" alt="남쪽아이"></div>
-                <p class="address">
-                    주소 : 전남 여수시 화양면 서우개길 100 <br>
-                    사업자번호 : 253-47-00803 (대표자 : 고윤아)<br>
-                    농어촌민박신고번호 : 15-여수-2023-0079<br>
-                    통신판매번호 : 제 2023-전남여수-0552 호
-                </p>
-                <ul class="sns-wrap">
-                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약"></a></li>
-                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_insta.png" alt="인스타그램"></a></li>
-                    <li><a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그"></a></li>
+              </li>
+              <li>
+                <a href="#link">room</a>
+                <ul>
+                  <li><a href="#link">Living&amp;Kitchen room</a></li>
+                  <li><a href="#link">Powder room</a></li>
+                  <li><a href="#link">Family room</a></li>
                 </ul>
-            </div>
-            
+              </li>
+              <li>
+                <a href="#link">special</a>
+                <ul>
+                  <li><a href="#link">OceanView</a></li>
+                  <li><a href="#link">Present</a></li>
+                  <li><a href="#link">Swimming pool</a></li>
+                  <li><a href="#link">Playground</a></li>
+                  <li><a href="#link">Bedding&amp;Amenity</a></li>
+                  <li><a href="#link">Appliances</a></li>
+                  <li><a href="#link">Baby goods</a></li>
+                  <li><a href="#link">BBQ</a></li>
+                  <li><a href="#link">Outdoor&amp;Sunset</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#link">reservation</a>
+                <ul>
+                  <li><a href="#link">Rservation</a></li>
+                  <li><a href="#link">실시간 예약</a></li>
+                  <li><a href="#link">Notice</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="right-cont">
+            <div class="ft-logo"><img src="../assets/images/common/f-logo.png" alt="남쪽아이" /></div>
+            <p class="address">
+              주소 : 전남 여수시 화양면 서우개길 100 <br />
+              사업자번호 : 253-47-00803 (대표자 : 고윤아)<br />
+              농어촌민박신고번호 : 15-여수-2023-0079<br />
+              통신판매번호 : 제 2023-전남여수-0552 호
+            </p>
+            <ul class="sns-wrap">
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_insta.png" alt="인스타그램" /></a>
+              </li>
+              <li>
+                <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="inner-con hr">
-            <div class="left-cont">
-                <div class="admin">
-                    <a href="#link">관리자로그인</a>
-                </div>
+          <div class="left-cont">
+            <div class="admin">
+              <a href="#link">관리자로그인</a>
             </div>
-            <div class="right-cont">
-               <div class="copyright">COPYRIGHT ⓒ  South Kids Premium PoolVilla
-                <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인"></span>
-                <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
-               </div> 
-               
+          </div>
+          <div class="right-cont">
+            <div class="copyright">
+              COPYRIGHT ⓒ South Kids Premium PoolVilla
+              <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인" /></span>
+              <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
             </div>
-            
+          </div>
         </div>
-        
-    </div>
-</footer>    
-<!--푸터-->     
-</body>
+      </div>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+  </body>
 </html>
