@@ -1103,6 +1103,97 @@ button, i {
   top: 1105px;
   right: 0;
 }
+
+.room-area .room-box {
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.room-area .room-box .tit-area .tit {
+  margin-top: 265px;
+  font-size: 100px;
+  font-family: "miller-banner-light", sans-serif;
+}
+
+.room-area .room-box .tit-area .tit-b {
+  font-size: 200px;
+  font-family: "miller-banner-light", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  top: -170px;
+  left: 0;
+}
+
+.room-area .room-box .img-txt-wrap {
+  height: 1058px;
+  position: relative;
+  background: url(../images/common/line_room.png) 127px 0px no-repeat;
+}
+
+.room-area .room-box .img-txt-wrap .img-area {
+  position: absolute;
+  left: 0;
+  top: 65px;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area {
+  width: 800px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area h3 {
+  border-bottom: 1px solid #c9c1ba;
+  font-family: "miller-banner-light", sans-serif;
+  font-size: 25px;
+  line-height: 1.9;
+  color: #948475;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area .cont {
+  padding-top: 20px;
+  padding-bottom: 35px;
+  letter-spacing: -1px;
+  color: #948475;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area .cont dl {
+  display: flex;
+  font-size: 16px;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area .cont dt {
+  margin-right: 30px;
+  font-family: "Pretendard-Medium", sans-serif;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area .cont dd {
+  margin-right: 30px;
+}
+
+.room-area .room-box .img-txt-wrap .txt-area .cont h4 {
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.room-area .room-box .img-txt-wrap .btn-area {
+  width: 194px;
+  height: 54px;
+  border: 1px solid #948475;
+  text-align: center;
+  border-radius: 900px 900px 900px 900px/300px 300px 300px 300px;
+}
+
+.room-area .room-box .img-txt-wrap .btn-area a {
+  padding-top: 13px;
+  display: block;
+  width: 100%;
+  height: 54px;
+}
+
+
 /*scroll-animation*/
 .scroll-obj {
   transition: 1.4s;
