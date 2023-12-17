@@ -241,3 +241,29 @@
   background: rgba(148, 132, 117, 1);
   border-radius: 50%;
 }
+
+/* 반응형 니중에 이동 */
+@media all and (max-width: 700px){
+  .tour-area {
+    width: 100%;
+    padding: 20px;
+  }
+  .tour-area .tour-nav-wrap {
+    display: none !important;
+  }
+  .tour-area .tit-area .tit {
+    font-size: 28px !important;
+    margin-top: 100px !important;
+  }
+  .tour-area .tit-area .tit-b {
+    font-size: 28px !important;
+    position: static !important;
+  }
+  .tour-area .cont-area {
+    margin-top: 100px !important;
+  }
+  .tour-area .tour-list-wrap, .tour-area .tour-box, .tour-area .tour-list-wrap * {
+    width: 100% !important;
+  }
+
+}
