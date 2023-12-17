@@ -169,6 +169,7 @@
   font-size: 14px;
   margin-bottom: 22px;
   letter-spacing: -1px;
+  white-space: pre-line;
 }
 
 .main-wrap .ncon3 .inner-cont .inner-cont2 .inner-left {
