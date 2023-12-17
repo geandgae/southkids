@@ -335,8 +335,8 @@ button, i {
 
 .top-slide-wrap .con1 .tit-wrap {
   position: absolute;
-  bottom: 190px;
-  left: 0;
+  right: 0;
+  bottom: 140px;
   text-align: right;
   pointer-events: none;
   width: 100%;
@@ -344,30 +344,32 @@ button, i {
 }
 
 .top-slide-wrap .con1 .tit-wrap .tit {
-  overflow: hidden;
   color: white;
-  overflow: hidden;
+  position: relative;
+  right: 160px;
 }
 
 .top-slide-wrap .con1 .tit-wrap.on .tit div {
-  transform: translateY(0);
+  transform: translateY(0); 
 }
 
 .top-slide-wrap .con1 .tit-wrap .tit div {
-  font-size: 35px;
-  font-family: "kepler-light", sans-serif;
-  transform: translateY(1.2em);
+  font-size: 30px;
+  font-family:  "Lato-Light", sans-serif;
+  transform: translateY(1.2em); 
   transition: 1.2s;
 }
 
 .top-slide-wrap .con1 .tit-wrap .tit div i {
   color: #fff;
-  font-family: "kepler-regular", sans-serif;
+  font-family: "miller-banner-light", sans-serif;
+  font-style: italic;
+  font-size: 35px;
 }
 
 .top-slide-wrap .con1 .tit-wrap .tit div p {
   padding-top: 10px;
-  font-size: 15px;
+  font-size: 15px !important;
   line-height: 1.3;
   font-family: "Lato-Light", sans-serif;
 }
@@ -434,6 +436,7 @@ button, i {
 .top-slide-wrap .con1 .tit-wrap .movie-btn {
   pointer-events: all;
 }
+
 
 /*탑 비쥬얼 - image*/
 .top-img-wrap .con1 .top-img-wrap {
@@ -900,6 +903,10 @@ button, i {
 .main-wrap .con5 .img1 {
   position: absolute;
   z-index: 10;
+  width: 100%;
+}
+.main-wrap .con5 .img1 img{
+  width: 100%;
 }
 
 .main-wrap .con5 .txt-area {
