@@ -233,11 +233,22 @@
 			<!-- section -->
       <section class="con4">
         <div class="bg-txt">SPECIAL OFFER</div>
-        <div class="inner-cont">
-          <div class="img1"><img src="../assets/images/gallery/main/m4-1.png" alt="" /></div>
-          <div class="img2"><img src="../assets/images/gallery/main/m4-2.png" alt="" /></div>
-          <div class="img3"><img src="../assets/images/gallery/main/m4-3.png" alt="" /></div>
+        <!-- swiper -->
+        <div class="swiper offerSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+							<div class="img1"><img src="../assets/images/gallery/main/m4-1.png" alt="" /></div>
+							<div class="img2"><img src="../assets/images/gallery/main/m4-2.png" alt="" /></div>
+							<div class="img3"><img src="../assets/images/gallery/main/m4-3.png" alt="" /></div>
+						</div>
+            <div class="swiper-slide">
+							<div class="img1"><img src="../assets/images/gallery/main/m4-1.png" alt="" /></div>
+							<div class="img2"><img src="../assets/images/gallery/main/m4-2.png" alt="" /></div>
+							<div class="img3"><img src="../assets/images/gallery/main/m4-3.png" alt="" /></div>
+						</div>
+          </div>
         </div>
+        <!-- //swiper -->
         <div class="white-bg">
           <p class="tit">OceanView</p>
           <p class="txt">
@@ -245,10 +256,13 @@
             먼발치 여수와 고흥을 잇는 팔영대교, <br />
             에메랄드 빛의 해안과 노을이 아름다운 여수 바다
           </p>
-          <div class="btns-area">이전 다음</div>
+          <div class="btns-area">
+						<button type="button" class="swiper-button-prev">이전</button>
+ 					 	<button type="button" class="swiper-button-next">다음</button>
+					</div>
         </div>
       </section>
-			<!-- //section -->
+      <!-- //section -->
     </main>
     <!-- //main -->
 
@@ -338,10 +352,25 @@
     </footer>
     <!-- //footer -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/aos.js"></script>
     <script>
       AOS.init({
         easing: "ease-in-out-sine",
+      });
+
+      var swiper = new Swiper(".offerSwiper", {
+        // slidesPerView: "auto",
+        slidesPerView: 1,
+        spaceBetween: 20,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
+				autoplay: {
+					delay: 5000,
+				},
+				loop: true
       });
     </script>
   </body>
