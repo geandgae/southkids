@@ -610,7 +610,50 @@
     left: 0;
 }
 
+/*sub_03*/
+.special-area .special-box {
+    width: 100%;
+    padding: 0 20px;
+}
+.special-area .special-box .tit-area {
+    margin-bottom: 30px;
+}
+.special-area .special-box .tit-area .tit {
+    margin-top: 100px;
+    font-size: 40px;
+}
+.special-area .special-box .tit-area .tit-b {
+    font-size: 62px;
+    top: -50px;
+    padding-left: 20px;
+}
+.special-area .special-box .img-area .img2 {
+    right: 20%;
+    top: 404px;
+    z-index: 10;
+}
+.special-area .special-box .img-area .img3 {
+    left: 0;
+    top: 535px;
+}
+.special-area .special-box .cont-area {
+    height: 1200px;
+}
+.special-area2{
+    margin-bottom: 50px;
+}
+.special-area .special-box .txt-area {
+    position: relative;
+    left: 0;
+    top: 486px;
+}
 
+.special-box2{
+    width: 100%;
+    background: url(../images/gallery/special-4-m.png) 0 0 no-repeat;
+    background-size: 100%;
+    height: 500px;
+  }
 
 
 }
