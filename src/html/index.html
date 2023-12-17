@@ -104,7 +104,7 @@
       <section class="con1" data-motion="tilde">
         <div class="top-overflow">
           <div class="top-move-box">
-            <div class="main-slide-wrap">
+            <div class="swiper main-slide-wrap">
               <figure class="swiper-wrapper">
                 <div class="swiper-slide vdo-slide">
                   <div class="top-vdo">
@@ -156,14 +156,14 @@
                 </div>
                 <div class="basic-slide-btn">
                   <button class="prev-btn-wrap">
-                    <a href="../assets/javascript:;" class="prev-btn">Prev</a>
+                    <a href="../assets/javascript:;" class="prev-btn swiper-button-prev">Prev</a>
                     <span class="slide-line"></span>
                   </button>
                   <div class="center-deco">
                     <span class="center-cir"></span>
                   </div>
                   <button class="next-btn-wrap">
-                    <a href="../assets/javascript:;" class="next-btn">Next</a>
+                    <a href="../assets/javascript:;" class="next-btn swiper-button-next">Next</a>
                     <span class="slide-line"></span>
                   </button>
                 </div>
@@ -391,6 +391,16 @@
 				},
 				autoplay: {
 					delay: 5000,
+				},
+				loop: true
+      });
+      var swiperMain = new Swiper(".main-slide-wrap", {
+        // slidesPerView: "auto",
+        slidesPerView: 1,
+        spaceBetween: 0,
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
 				},
 				loop: true
       });
