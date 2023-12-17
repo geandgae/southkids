@@ -1393,6 +1393,148 @@ button, i {
   left: 0;
 }
 
+.reservation-area .reservation-box {
+  width: 1400px;
+  margin: 0 auto 133px;
+  position: relative;
+}
+
+.reservation-area .reservation-box .tit-area {
+  text-align: center;
+}
+
+.reservation-area .reservation-box .tit-area .tit {
+  margin-top: 265px;
+  font-size: 100px;
+  font-family: "miller-banner-light", sans-serif;
+}
+
+.reservation-area .reservation-box .tit-area .tit-b {
+  width: 100%;
+  text-align: center;
+  font-size: 200px;
+  font-family: "miller-banner-light", sans-serif;
+  opacity: 0.1;
+  position: absolute;
+  top: -170px;
+  left: 0;
+}
+
+.reservation-area .reservation-box .cont-area {
+  margin-top: 180px;
+  display: flex;
+}
+
+.reservation-area .reservation-box .txt-area {
+  margin-left: 88px;
+}
+
+.reservation-area .reservation-box .txt-area .tit {
+  margin-bottom: 50px;
+  margin-top: 35px;
+  font-size: 50px;
+  font-family: "NanumMyeongjoBold", sans-serif;
+}
+
+.reservation-area .reservation-box .txt-area dl {
+  display: flex;
+  font-size: 20px;
+}
+
+.reservation-area .reservation-box .txt-area dt {
+  padding: 0 18px 20px 45px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 600;
+}
+
+.reservation-area .reservation-box .txt-area dt.ico1 {
+  background: url(../images/common/ico_reser1.png) 0 0 no-repeat;
+}
+
+.reservation-area .reservation-box .txt-area dt.ico2 {
+  background: url(../images/common/ico_reser2.png) 0 0 no-repeat;
+}
+
+.reservation-area .reservation-box .txt-area dt.ico3 {
+  background: url(../images/common/ico_reser3.png) 0 0 no-repeat;
+}
+
+.reservation-area .reservation-box .txt-area dd {
+  font-family: "Pretendard-Regular", sans-serif;
+}
+
+.reservation-area .reservation-box .txt-area .btn-area {
+  margin-top: 44px;
+  width: 194px;
+  height: 54px;
+}
+
+.reservation-area .reservation-box .txt-area .btn-area a {
+  display: block;
+  width: 100%;
+  height: 54px;
+  padding-top: 16px;
+  background: rgba(148, 132, 117, 0.2);
+  font-size: 13px;
+  color: #948475;
+  border-radius: 900px 900px 900px 900px/300px 300px 300px 300px;
+  text-align: center;
+}
+
+.reservation-area .reservation-box .table-area {
+  text-align: center;
+  margin-top: 95px;
+}
+
+.reservation-txt-area .reservation-txt-box {
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 195px;
+  padding-bottom: 160px;
+}
+
+.reservation-txt-area .reservation-txt-box .cont {
+  display: flex;
+  letter-spacing: -1px;
+}
+
+.reservation-txt-area .reservation-txt-box .cont .left {
+  flex: 1;
+}
+
+.reservation-txt-area .reservation-txt-box .cont ul {
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.reservation-txt-area .reservation-txt-box .cont .right {
+  flex: 1;
+}
+
+.reservation-txt-area h3 {
+  font-size: 50px;
+  font-family: "NanumMyeongjoBold", sans-serif;
+}
+
+.reservation-txt-area .cont-area2 {
+  margin-top: 125px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
 /*scroll-animation*/
 .scroll-obj {
   transition: 1.4s;
