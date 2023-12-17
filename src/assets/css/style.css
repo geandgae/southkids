@@ -490,4 +490,67 @@
     padding-top: 50px;
 }
 
+.main-wrap .con4 {
+    padding: 60px 20px;
+}
+.main-wrap .con4 .bg-txt {
+    top: 0px;
+    left: 28px;
+    z-index: 130;
+    width: 100%;
+    font-size: 60px;
+    opacity: 0.1;
+    line-height: 1.1;
+}
+.offerSwiper {
+    width: 100%;
+    overflow: hidden;
+    z-index: 20 !important;
+    position: relative;
+}
+.main-wrap .con4 .white-bg {
+    background: #fff !important;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 390px;
+    z-index: 10 !important;
+}
+.main-wrap .con4 .white-bg .tit {
+    top: 277px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.main-wrap .con4 .white-bg .txt {
+    position: absolute;
+    top: 375px;
+    right: 0;
+    left: 0;
+    padding-left: 20px;
+    text-align: center;
+    color: #414141;
+    font-size: 16px;
+    width: 100%;
+}
+.main-wrap .con4 .btns-area {
+    top: 497px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.main-wrap .con5{
+    background: #fff9f4 url(../images/trash-2-m.png) 0 0 no-repeat;
+    background-size: 100%;
+    height: 490px;
+}
+.main-wrap .con5 .txt-area {
+    height: 490px;
+}
+
 }

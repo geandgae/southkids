@@ -242,6 +242,85 @@
   border-radius: 50%;
 }
 
+.ft .inner-con .right-cont .admin.mo {
+  text-decoration: underline;
+  color: #957f72;
+  font-size: 14px;
+  margin-top: 15px;
+  display: none;
+}
+.f-always{
+  display: inline-block;
+}
+.main-wrap .con4 {
+  margin-top: 0px;
+  padding: 160px;
+}
+.offerSwiper .swiper-slide {
+  background: transparent !important;
+}
+
+.swiper-button-prev.new{
+  background: url(../images/common/btn-prev.png) 0 0 no-repeat !important;
+  width: 53px;
+  height: 43px;
+  background-size: 53PX 43PX;
+  margin: 0 8px;
+}
+
+.swiper-button-next.new{
+  background: url(../images/common/btn-next.png) 0 0 no-repeat;
+  width: 53px;
+  height: 43px;
+  background-size: 53PX 43PX;
+  margin: 0 8px;
+}
+.main-wrap .con4 .bg-txt {
+    top: 500px;
+    left: 200px;
+    z-index: 130;
+    width: 1600px;
+}
+.main-wrap .con4 .white-bg {
+    background: #fff !important;
+    width: 1200px;
+    height: 895px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    z-index: 10 !important;
+}
+.offerSwiper {
+    width: 1150px;
+    overflow: hidden;
+    z-index: 120 !important;
+    position: relative;
+}
+.main-wrap .con4 .white-bg .tit {
+    right: 269px;
+}
+
+.main-wrap .con4 .white-bg .txt {
+    position: absolute;
+    top: 375px;
+    right: 217px;
+    text-align: left;
+    color: #414141;
+    font-size: 16px;
+}
+
+.main-wrap .con5{
+  background: url(../images/trash-2.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+
+.main-wrap .con5 .img1 {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+
 /* 반응형 니중에 이동 */
 @media all and (max-width: 700px) {
   /* tit-area */

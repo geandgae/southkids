@@ -861,12 +861,12 @@ button, i {
 }
 
 .main-wrap .con4 .white-bg {
-  background: #fff;
+  background: #fff !important;
   width: 960px;
   height: 834px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 140px;
   z-index: 10;
 }
 
