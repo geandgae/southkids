@@ -297,6 +297,32 @@
 .pc-map{display: none;}
 .m-br{display: block;}
 
+.ft .inner-con{
+    padding-bottom: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.ft .inner-con .right-cont {
+    width: 100%;
+    text-align: center;
+}
+.ft .ft-logo {
+    width: 145px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+.ft .inner-con .right-cont .sns-wrap {
+    margin-top: 30px;
+    justify-content: center;
+}
+.ft .inner-con .left-cont{
+    display: none;
+}
+
+
+
 /* 메인 */
 .top-slide-wrap .con1 .tit-wrap .tit {
   right: 0;
@@ -440,6 +466,28 @@
     width: 100%;
     margin-top: 60px;
     margin-bottom: 180px;
+}
+.ft .inner-con .right-cont .admin.mo{
+    display: block;
+}
+.ft .inner-con .right-cont .sns-wrap li {
+    margin: 0 8px;
+}
+.ft .inner-con.hr {
+    margin-top: 40px;
+    padding-top: 30px;
+}
+.ft .inner-con .right-cont span {
+
+    margin-left: 0;
+}
+.f-always{
+    display: block;
+    margin-top: 10px;
+}
+.ft .ft-overflow {
+    height: 460px;
+    padding-top: 50px;
 }
 
 }

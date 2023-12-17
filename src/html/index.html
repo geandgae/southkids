@@ -317,8 +317,8 @@
             에메랄드 빛의 해안과 노을이 아름다운 여수 바다
           </p>
           <div class="btns-area">
-						<button type="button" class="swiper-button-prev">이전</button>
- 					 	<button type="button" class="swiper-button-next">다음</button>
+						<button type="button" class="swiper-button-prev"></button>
+ 					 	<button type="button" class="swiper-button-next"></button>
 					</div>
         </div>
       </section>
@@ -398,6 +398,9 @@
               농어촌민박신고번호 : 15-여수-2023-0079<br />
               통신판매번호 : 제 2023-전남여수-0552 호
             </p>
+            <div class="admin mo">
+              <a href="#link">관리자로그인</a>
+            </div>
             <ul class="sns-wrap">
               <li>
                 <a href="#link" target="_blank"><img src="../assets/images/common/ico_clock.png" alt="실시간예약" /></a>
@@ -409,6 +412,7 @@
                 <a href="#link" target="_blank"><img src="../assets/images/common/ico_blog.png" alt="네이버블로그" /></a>
               </li>
             </ul>
+            
           </div>
         </div>
         <div class="inner-con hr">
@@ -420,8 +424,10 @@
           <div class="right-cont">
             <div class="copyright">
               COPYRIGHT ⓒ South Kids Premium PoolVilla
+              <p class="f-always">
               <span><img src="../assets/images/common/f-aw.png" alt="언제나, 디자인" /></span>
               <span class="copyright2">photo&amp;desinged by 언제나, 디자인 </span>
+              </p>
             </div>
           </div>
         </div>
@@ -460,5 +466,40 @@
 				loop: true
       });
     </script>
+    <style>
+      .ft .inner-con .right-cont .admin.mo {
+  text-decoration: underline;
+  color: #957f72;
+  font-size: 14px;
+  margin-top: 15px;
+  display: none;
+}
+.f-always{
+  display: inline-block;
+}
+.main-wrap .con4 {
+  margin-top: 0px;
+  padding: 160px;
+}
+.offerSwiper .swiper-slide {
+  background: transparent !important;
+}
+
+.swiper-button-prev{
+  background: url(../assets/images/common/btn-prev.png) 0 0 no-repeat !important;
+  width: 53px;
+  height: 43px;
+  background-size: 53PX 43PX;
+  margin: 0 8px;
+}
+
+.swiper-button-next{
+  background: url(../assets/images/common/btn-next.png) 0 0 no-repeat;
+  width: 53px;
+  height: 43px;
+  background-size: 53PX 43PX;
+  margin: 0 8px;
+}
+    </style>
   </body>
 </html>
