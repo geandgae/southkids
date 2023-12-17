@@ -250,13 +250,15 @@
     width: 100% !important;
   }
   .tour-area .tit-area .tit, 
-  .prologue-area .tit-area .tit {
+  .prologue-area .tit-area .tit,
+  .reservation-area .tit-area .tit {
     font-size: 28px !important;
     margin-top: 100px !important;
     padding-top: 0 !important;
   }
   .tour-area .tit-area [class^="tit-"],
-  .prologue-area .tit-area [class^="tit-"] {
+  .prologue-area .tit-area [class^="tit-"],
+  .reservation-area .tit-area [class^="tit-"] {
     font-size: 28px !important;
     position: static !important;
   }
@@ -296,6 +298,68 @@
   }
   .tour-area .tour-list-wrap, .tour-area .tour-box, .tour-area .tour-list-wrap * {
     width: 100% !important;
+  }
+
+  /* 06 */
+  .reservation-area {
+    width: 100% !important;
+    padding: 20px;
+  }
+  .reservation-area .reservation-box {
+    width: 100%;
+    height: auto !important;
+  }
+  .reservation-area .cont-area {
+    width: 100% !important;
+    margin-top: 40px !important;
+  }
+  .reservation-area .cont-area .txt-area {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .reservation-area .cont-area .txt-area .tit,
+  .reservation-txt-area h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .reservation-area .txt dl{
+    display: block !important;
+  }
+  .reservation-area .txt [class^="ico"] {
+    font-size: 20px !important;
+    padding: 0 !important;
+  }
+  .reservation-area .txt dd {
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+  .reservation-area .table-area {
+    width: 100% !important;
+    margin-top: 20px !important;
+    height: auto !important;
+  }
+  .reservation-txt-area .reservation-txt-box {
+    padding-top: 10%;
+    width: 100%;
+  }
+  .reservation-txt-area .cont-area {
+    background: #fff9f4;
+    padding: 20% 20px !important;
+  }
+  .reservation-txt-area .cont-area2 {
+    padding: 20% 20px !important;
+  }
+
+  .reservation-txt-area .cont {
+    display: block !important;
+  }
+  .reservation-txt-area .mt60 {
+    margin: 0 !important;
+  }
+  .reservation-txt-area .right,
+  .reservation-txt-area .cont-area2 {
+    margin-top: 20% !important;
   }
 
 }
