@@ -99,7 +99,7 @@
     <!-- //header -->
 
     <!-- main -->
-    <main class="main-wrap top-slide-wrap">
+    <main class="main-wrap top-slide-wrap" style="overflow: unset;">
 			<!-- section -->
       <section class="con1" data-motion="tilde">
         <div class="top-overflow">
@@ -376,12 +376,40 @@
       </div>
     </footer>
     <!-- //footer -->
-
     <script src="../assets/js/aos.js"></script>
     <script>
       AOS.init({
         easing: "ease-in-out-sine",
       });
+
+      //투어 메뉴
+      const tour_nav_setting = function(){
+        const container = $(".cont-area"),
+        nav_wrap = container.find(".tour-nav-wrap"),
+        nav = nav_wrap.find("li"),
+        info_wrap = container.find(".tour-list-wrap"),
+        info = info_wrap.find("li");
+
+        function nav_active(){
+            info.each(function(){                
+                if($(window).scrollTop() + ($(window).innerHeight()* 1/4) >= $(this).offset().top ){
+                    nav.removeClass("on")
+                    nav.eq($(this).index()).addClass("on")
+                }                
+            })
+        }
+        nav.on("click",function(e){
+            e.preventDefault()
+            let this_index = $(this).index()
+            $("html,body").animate({"scrollTop":info.eq(this_index).offset().top - ($(window).innerHeight()* 1/4) + 10})
+        })
+        $(window).on("scroll",function(){
+            nav_active()
+        })
+    }
+    if($(".tour-area").length > 0){
+        tour_nav_setting()
+    }
     </script>
   </body>
 </html>

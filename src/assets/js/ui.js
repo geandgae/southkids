@@ -15,6 +15,7 @@
     }
   })
   
+  /*
   const tourNav = document.querySelectorAll("[data-motion=tour] .tour-nav-wrap li");
   const tourList = document.querySelectorAll("[data-motion=tour] .tour-list-wrap li");
 
@@ -40,6 +41,7 @@
       // });
     })
   }
+  */
   
 
  

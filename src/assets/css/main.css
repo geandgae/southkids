@@ -10,12 +10,24 @@
   height: 50%;
 }
 
-[data-motion=tour] .tour-list-wrap li {
+/* [data-motion=tour] .tour-list-wrap li {
   display: none;
 }
 [data-motion=tour] .tour-list-wrap li.on {
   display: block;
+} 
+.cont-area[data-motion=tour] {
+  position: relative;
+  height: 100%;
 }
+*/
+
+.cont-area[data-motion=tour] .tour-nav-wrap{
+  height: 500px;
+  position: sticky;
+  top: 30%;
+}
+
 .offerSwiper + .white-bg {
   background-color: transparent !important;
   z-index: 100 !important;
