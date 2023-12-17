@@ -49,7 +49,15 @@
     url(../font/Pretendard-Medium.woff) format("woff"),
     url(../font/Pretendard-Medium.woff2) format("woff2")
 }
-
+@font-face{
+    font-family: "NanumMyeongjoBold";
+    font-style: normal;
+    font-weight: 600;
+    src: local(※),
+    url(../font/NanumMyeongjoBold.eot) format("embedded-opentype"),
+    url(../font/NanumMyeongjoBold.woff) format("woff"),
+    url(../font/NanumMyeongjoBold.woff2) format("woff2")
+}
 
 /* adobe fonts *************************************************************************/
 /* kelperStd lightExt disp */
