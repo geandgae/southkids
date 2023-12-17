@@ -559,8 +559,8 @@
     font-size: 40px;
 }
 .room-area .room-box .tit-area .tit-b {
-    font-size: 50px;
-    top: -40px;
+    font-size: 62px;
+    top: -50px;
     padding-left: 20px;
 }
 .room-area .room-box {
@@ -609,5 +609,8 @@
     top: 210px;
     left: 0;
 }
+
+
+
 
 }
